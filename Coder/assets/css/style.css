@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body {
+    background-color: white;
+}
+
+/* Cabecera */
+
+h1 a{
+    color: rgb(255, 140, 0);
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+}
+
+/* Menú */
+
+.usuario{
+    padding-left: 70%;
+   
+}
+header{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    position: relative;
+}
+nav ul li a{
+    color: rgb(236, 130, 1);
+}
+nav ul li a:hover{
+    color: rgb(22, 11, 11);
+}
+
+
+/* Menú productos */
+
+
+.Subtitulo{
+    background-color: rgb(244, 223, 239);
+    width: 100%;
+    height: 24vh;
+    text-align: left;
+    border-style: solid;
+    
+}
+.opciones{ 
+    margin-left: 70%;
+    cursor: pointer;
+    
+   
+}
+
+section div ul li:hover{
+    color: rgb(0, 180, 6);
+}
+
+
+
+section div ul li ul li{
+    color: rgb(204, 8, 132);
+    display: block;
+}
+
+section div ul ul{
+    position: absolute;
+    display: none;
+}
+
+section div ul li:hover ul{
+        display: block;
+}
+
+
+#perfumes{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row: auto auto auto auto auto;
+    grid-area: 
+    "tipos"
+    "fragancias2" 
+    "fragancias2"
+    "fragancias2" 
+    "fragancias2"
+    "fragancias2" 
+    
+    ;
+}
+
+@media only screen and (min-width:768px){
+
+    #perfumes{
+        background-color: aliceblue;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "tipos fragancias2 fragancias2 fragancias2"
+        "tipos fragancias2 fragancias2 fragancias2"
+    
+        ;
+       }
+}
+
+
+.tipos{
+background-color: aliceblue;
+}
+
+
+@media only screen and (min-width:768px){
+.tipos{
+    grid-area: tipos;
+    background-color: aliceblue;
+    border: 15cm;
+    padding-bottom: 3%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    }
+}
+
+
+
+
+section ul li{
+    list-style: none;
+}
+
+
+
+
+
+/* Imágenes inicio */
+
+.beneficios{
+    width: 4%;
+    
+}
+
+main div {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/* Últimos ingresos */
+
+.fragancias{
+    padding-bottom: 1%;
+    padding-left: 25%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+
+}
+    
+   
+
+
+
+section div a img{
+    width: 160px;
+    
+}
+
+section h2{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.boton__comprar{
+    background-color: #ffd200;
+    border-radius: 28px;
+    border: 1px solid #d05514fa;
+    display:block;
+    position: relative;
+    width: 200px;
+    cursor:pointer;
+    color: #d20f5d;
+    font-family: Arial;
+    text-align: center;
+    font-size: 17px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0 auto;
+    animation: resaltar 2s infinite;
+}
+
+@keyframes resaltar{
+    0%{top:0px;}
+    50%{top:10px;background-color: black;}
+    100%{top:0px,}
+
+}
+
+.boton__comprar:hover{
+    background-color: #02b5e7fa;
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+
+/* Redes sociales */
+
+#redes{  
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+padding-left: 45%;
+background: linear-gradient(#ff8008 , #ffc837)
+}
+nav a img{
+    width: 4%;
+}
+
+/* Formulario */
+section form{
+    padding-left: 30%;
+}
+
+
+
+/* Pie de página */
+footer{
+    padding-left: 30%;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section p{
+    padding-left: 30%;
+}
+h3{
+    padding-left: 30%;
+}
