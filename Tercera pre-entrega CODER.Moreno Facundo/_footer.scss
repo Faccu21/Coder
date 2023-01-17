@@ -1,0 +1,12 @@
+@use "_commons.scss" as c;
+
+/* Pie de página */
+footer{
+    padding-left: 30%;
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    section p{
+        padding-left: 30%;
+    }
+}
