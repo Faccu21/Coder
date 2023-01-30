@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/* Menú */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 a {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: "Lobster Two", cursive;
+}
+header .usuario {
+  padding-left: 70%;
+  font-size: 140%;
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+header nav ul li a {
+  color: rgba(13, 9, 0, 0.9058823529);
+}
+header nav ul li a:hover {
+  color: darkred;
+}
+
+/* Menú productos */
+.Subtitulo {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 24vh;
+  text-align: left;
+  border-style: inset;
+  border-top: white;
+  margin-bottom: 2%;
+}
+
+.opciones {
+  margin-left: 70%;
+  cursor: pointer;
+}
+.opciones li {
+  list-style: none;
+}
+.opciones li:hover {
+  color: darkred;
+}
+
+section div ul li ul li {
+  color: black;
+  display: block;
+}
+
+section div ul ul {
+  position: absolute;
+  display: none;
+}
+
+section div ul li:hover ul {
+  display: block;
+}
+
+#perfumes {
+  background-color: white;
+  display: grid;
+  text-align: center;
+  gap: 15px;
+  grid-template-columns: 100%;
+  grid-row: auto auto auto auto auto;
+  grid-area: "tipos" "fragancias2" "fragancias2" "fragancias2" "fragancias2" "fragancias2";
+}
+#perfumes .tipos {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  #perfumes .tipos {
+    grid-area: tipos;
+    background: linear-gradient(#434343, #000000);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+}
+#perfumes li {
+  list-style: none;
+  padding-right: 31px;
+}
+#perfumes li:hover {
+  color: darkred;
+}
+
+@media only screen and (min-width: 768px) {
+  #perfumes {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tipos fragancias2 fragancias2 fragancias2" "tipos fragancias2 fragancias2 fragancias2";
+  }
+}
+.fragancias2 {
+  transition: all 0.4s ease-in-out;
+}
+.fragancias2:hover {
+  transform: scale(1.2);
+}
+
+/* Imágenes inicio */
+.icono {
+  padding-top: 1%;
+  font-size: 50px;
+}
+
+main div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+/* Últimos ingresos */
+.fragancias {
+  padding-bottom: 1%;
+  padding-left: 25%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+section div a img {
+  width: 160px;
+}
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+}
+
+/* Redes sociales */
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#000000, #434343);
+  color: rgba(230, 9, 9, 0.5450980392);
+  height: 10vh;
+}
+
+div a {
+  display: flex;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  min-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.redes a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 75px;
+  height: 75px;
+  line-height: 72px;
+  text-align: center;
+  background: black;
+  color: rgba(230, 9, 9, 0.4980392157);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+}
+
+/* Formulario */
+registro {
+  width: 400px;
+  background: #24303c;
+  margin: auto;
+  padding: 30px;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: "Calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+registro h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+registro a {
+  color: white;
+  text-decoration: none;
+}
+registro a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+botones {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-size: 18px;
+  font-family: "Calibri";
+}
+
+/* Pie de página */
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=main.css.map */
